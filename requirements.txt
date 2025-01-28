@@ -15,10 +15,5 @@ langchain-google-genai
 pinecone
 together
 streamlit
-python-dotenv
-PyPDF2
-pinecone-client
-langchain
-langchain-google-genai
-together-ai
+
 
