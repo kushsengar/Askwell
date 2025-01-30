@@ -18,15 +18,18 @@ Streamlit: Powers the user interface for document upload, processing, and intera
 Together.ai: Facilitates interaction with the LLM (large language model) for generating responses based on the retrieved document context.
 
 # How the RAG Pipeline Works
-Document Upload and Preprocessing:
+![PDF-LangChain](https://github.com/user-attachments/assets/72dbd425-6025-4025-9254-7ead3e4e73da)
+The application follows these steps to provide responses to your questions:
 
-# Users upload PDF documents.
-The content is extracted using PyPDF2 and split into smaller chunks using the CharacterTextSplitter.
-Embedding and Indexing:
+ 1.PDF Loading: The app reads multiple PDF documents and extracts their text content.
 
-# Text chunks are embedded into vector representations using Google GenerativeAI Embeddings.
-Pinecone indexes these vectors, enabling fast and efficient similarity searches.
-Querying:
+ 2.Text Chunking: The extracted text is divided into smaller chunks that can be processed effectively.
+
+ 3.Language Model: The application utilizes a language model to generate vector representations (embeddings) of the text chunks.
+
+ 4.Similarity Matching: When you ask a question, the app compares it with the text chunks and identifies the most semantically similar ones.
+
+ 5.Response Generation: The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
 
 # Users ask questions via the chat interface.
 The RAG pipeline retrieves relevant text chunks from Pinecone based on the query embedding.
@@ -45,4 +48,4 @@ Clone the repository and install dependencies using requirements.txt.
 Run the application with streamlit run app.py.
 Upload your PDFs and start querying your documents.
 With Askwell, make your documents smarter and accessible in ways never before possible!
-![PDF-LangChain](https://github.com/user-attachments/assets/72dbd425-6025-4025-9254-7ead3e4e73da)
+
