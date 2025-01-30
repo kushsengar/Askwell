@@ -1,10 +1,10 @@
-![PDF-LangChain](https://github.com/user-attachments/assets/d2a13e76-e977-43d3-98c1-befbab139e1d)# Chat with Your Documents Using Askwell
+# Chat with Your Documents Using Askwell
 Askwell is a Retrieval-Augmented Generation (RAG) pipeline application designed to interact with documents using natural language queries. At its core, Askwell leverages transformer models, advanced embedding techniques, and vector stores to retrieve and summarize document information effectively.
 
-About Transformer Models
+# About Transformer Models
 Transformer models are at the heart of modern natural language processing (NLP). They excel in understanding context through self-attention mechanisms, enabling them to process and generate human-like text. Askwell uses the transformer model's capabilities to generate responses by combining document context with user queries.
 
-Libraries and Components
+# Libraries and Components
 PyPDF2: Used to extract raw text from uploaded PDF files. It efficiently parses and retrieves document content.
 
 CharacterTextSplitter: This utility chunks the extracted text into manageable pieces, ensuring an optimal input size for embedding and querying while preserving context.
@@ -17,18 +17,18 @@ Streamlit: Powers the user interface for document upload, processing, and intera
 
 Together.ai: Facilitates interaction with the LLM (large language model) for generating responses based on the retrieved document context.
 
-How the RAG Pipeline Works
+# How the RAG Pipeline Works
 Document Upload and Preprocessing:
 
-Users upload PDF documents.
+# Users upload PDF documents.
 The content is extracted using PyPDF2 and split into smaller chunks using the CharacterTextSplitter.
 Embedding and Indexing:
 
-Text chunks are embedded into vector representations using Google GenerativeAI Embeddings.
+# Text chunks are embedded into vector representations using Google GenerativeAI Embeddings.
 Pinecone indexes these vectors, enabling fast and efficient similarity searches.
 Querying:
 
-Users ask questions via the chat interface.
+# Users ask questions via the chat interface.
 The RAG pipeline retrieves relevant text chunks from Pinecone based on the query embedding.
 A prompt combining the query and retrieved context is sent to the LLM for a response.
 Response Generation:
