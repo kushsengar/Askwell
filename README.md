@@ -1,4 +1,4 @@
-# Chat with Your Documents Using Askwell
+![PDF-LangChain](https://github.com/user-attachments/assets/d2a13e76-e977-43d3-98c1-befbab139e1d)# Chat with Your Documents Using Askwell
 Askwell is a Retrieval-Augmented Generation (RAG) pipeline application designed to interact with documents using natural language queries. At its core, Askwell leverages transformer models, advanced embedding techniques, and vector stores to retrieve and summarize document information effectively.
 
 About Transformer Models
@@ -45,3 +45,4 @@ Clone the repository and install dependencies using requirements.txt.
 Run the application with streamlit run app.py.
 Upload your PDFs and start querying your documents.
 With Askwell, make your documents smarter and accessible in ways never before possible!
+![PDF-LangChain](https://github.com/user-attachments/assets/72dbd425-6025-4025-9254-7ead3e4e73da)
