@@ -49,3 +49,5 @@ Run the application with streamlit run app.py.
 Upload your PDFs and start querying your documents.
 With Askwell, make your documents smarter and accessible in ways never before possible!
 
+[Internship certificate](infosysSbintern.pdf)
+
